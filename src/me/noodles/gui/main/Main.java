@@ -3,6 +3,7 @@ package me.noodles.gui.main;
 import java.io.File;
 import java.io.IOException;
 
+import me.noodles.gui.MetricsLite;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -28,6 +29,7 @@ public class Main extends JavaPlugin
         this.registerEvents();
         this.registerCommands();
         plugin = this;
+        MetricsLite metrics = new MetricsLite(this);
         this.setEnabled(true);
 		getLogger().info("AdvancedBanGUI V" + VarUtilType.getVersion() + " started!");
 		this.getLogger().info("AdvancedBanGUI V" + VarUtilType.getVersion() + " checking for updates...");
