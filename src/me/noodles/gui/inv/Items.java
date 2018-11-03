@@ -21,8 +21,7 @@ public class Items {
         stone.setItemMeta(stonem);
         return stone;
     }
-	
-    
+
     private static String getColor(String msg) {
         return ChatColor.translateAlternateColorCodes('&', msg);
     }
