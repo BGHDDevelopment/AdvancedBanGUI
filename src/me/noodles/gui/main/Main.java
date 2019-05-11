@@ -7,12 +7,10 @@ import me.noodles.gui.MetricsLite;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import me.noodles.gui.commands.Punish;
-import me.noodles.gui.inv.ClickEvents;
 import me.noodles.gui.main.updatechecker.JoinExample;
 import me.noodles.gui.main.updatechecker.UpdateChecker;
 
@@ -54,7 +52,6 @@ public class Main extends JavaPlugin
     public void registerEvents() {
         final PluginManager pm = this.getServer().getPluginManager();
         pm.registerEvents(new Punish(), this);
-        pm.registerEvents(new ClickEvents(), this);
         pm.registerEvents(new JoinExample(), this);
     }
     public void registerCommands() {
