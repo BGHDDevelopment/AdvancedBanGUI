@@ -77,12 +77,13 @@ public class Punish implements Listener, CommandExecutor {
 @EventHandler
 public void onClick(InventoryClickEvent e) {
     Player p = (Player)e.getWhoClicked();
-	if (e.getInventory().equals(p.getOpenInventory().getTopInventory())) {
-		e.setCancelled(true);
-	}
-	if (e.getCurrentItem() == null) {
-		e.setCancelled(true);
+	if (e.getView().getTitle().equals(null)) {
 		return;
+	}
+	if (e.getView().getTitle().equals(InvNames.Main)) {
+		e.setCancelled(true);
+	} else {
+		e.setCancelled(false);
 	}
     if (e.getCurrentItem().equals(Items.PermMute(p))) {
         	p.chat("/mute " + bannedPlayer.getName() + " -s" + " " + Main.plugin.getbanreason1Config().getString("PermMuteReason"));
