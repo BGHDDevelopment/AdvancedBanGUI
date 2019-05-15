@@ -1,6 +1,6 @@
 main: me.noodles.gui.main.Main
 name: AdvancedBanGUI
-version: 1.6
+version: 1.7
 author: Noodles
 commands:
    punish:

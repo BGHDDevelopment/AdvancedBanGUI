@@ -82,70 +82,66 @@ public class Punish implements Listener, CommandExecutor {
 		}
 		if (e.getView().getTitle().equals(InvNames.Main)) {
 			e.setCancelled(true);
-		} else {
-			e.setCancelled(false);
-		}
-		if (e.getView().getTitle().equals(InvNames.Main)) {
-			if (e.getCurrentItem().equals(Items.PermMute(p))) {
-				p.chat("/mute " + bannedPlayer.getName() + " -s" + " " + Main.plugin.getbanreason1Config().getString("PermMuteReason"));
-				p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.plugin.getConfig().getString("Prefix") + Main.plugin.getbanreason1Config().getString("PermMuteMessage").replace("%player%", bannedPlayer.getName())));
-				p.closeInventory();
+				if (e.getCurrentItem().equals(Items.PermMute(p))) {
+					p.chat("/mute " + bannedPlayer.getName() + " -s" + " " + Main.plugin.getbanreason1Config().getString("PermMuteReason"));
+					p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.plugin.getConfig().getString("Prefix") + Main.plugin.getbanreason1Config().getString("PermMuteMessage").replace("%player%", bannedPlayer.getName())));
+					p.closeInventory();
 
-			}
-			if (e.getCurrentItem().equals(Items.Severity1Mute(p))) {
-				p.chat("/tempmute " + bannedPlayer.getName() + " " + Main.plugin.getbanreason1Config().getString("Severity1MuteTime") + " -s" + " " + Main.plugin.getbanreason1Config().getString("Severity1MuteReason"));
-				p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.plugin.getConfig().getString("Prefix") + Main.plugin.getbanreason1Config().getString("Severity1MuteMessage").replace("%player%", bannedPlayer.getName())));
-				p.closeInventory();
+				}
+				if (e.getCurrentItem().equals(Items.Severity1Mute(p))) {
+					p.chat("/tempmute " + bannedPlayer.getName() + " " + Main.plugin.getbanreason1Config().getString("Severity1MuteTime") + " -s" + " " + Main.plugin.getbanreason1Config().getString("Severity1MuteReason"));
+					p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.plugin.getConfig().getString("Prefix") + Main.plugin.getbanreason1Config().getString("Severity1MuteMessage").replace("%player%", bannedPlayer.getName())));
+					p.closeInventory();
 
-			}
-			if (e.getCurrentItem().equals(Items.Severity1GeneralBan(p))) {
-				p.chat("/tempban " + bannedPlayer.getName() + " " + Main.plugin.getbanreason1Config().getString("Severity1GeneralBanTime") + " -s" + " " + Main.plugin.getbanreason1Config().getString("Severity1GeneralBanReason"));
-				p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.plugin.getConfig().getString("Prefix") + Main.plugin.getbanreason1Config().getString("Severity1GeneralBanMessage").replace("%player%", bannedPlayer.getName())));
-				p.closeInventory();
+				}
+				if (e.getCurrentItem().equals(Items.Severity1GeneralBan(p))) {
+					p.chat("/tempban " + bannedPlayer.getName() + " " + Main.plugin.getbanreason1Config().getString("Severity1GeneralBanTime") + " -s" + " " + Main.plugin.getbanreason1Config().getString("Severity1GeneralBanReason"));
+					p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.plugin.getConfig().getString("Prefix") + Main.plugin.getbanreason1Config().getString("Severity1GeneralBanMessage").replace("%player%", bannedPlayer.getName())));
+					p.closeInventory();
 
-			}
-			if (e.getCurrentItem().equals(Items.Severity1ClientBan(p))) {
-				p.chat("/tempban " + bannedPlayer.getName() + " " + Main.plugin.getbanreason1Config().getString("Severity1ClientBanTime") + " -s" + " " + Main.plugin.getbanreason1Config().getString("Severity1ClientBanReason"));
-				p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.plugin.getConfig().getString("Prefix") + Main.plugin.getbanreason1Config().getString("Severity1ClientBanMessage").replace("%player%", bannedPlayer.getName())));
-				p.closeInventory();
+				}
+				if (e.getCurrentItem().equals(Items.Severity1ClientBan(p))) {
+					p.chat("/tempban " + bannedPlayer.getName() + " " + Main.plugin.getbanreason1Config().getString("Severity1ClientBanTime") + " -s" + " " + Main.plugin.getbanreason1Config().getString("Severity1ClientBanReason"));
+					p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.plugin.getConfig().getString("Prefix") + Main.plugin.getbanreason1Config().getString("Severity1ClientBanMessage").replace("%player%", bannedPlayer.getName())));
+					p.closeInventory();
 
-			}
-			if (e.getCurrentItem().equals(Items.Severity2Mute(p))) {
-				p.chat("/tempmute " + bannedPlayer.getName() + " " + Main.plugin.getbanreason1Config().getString("Severity2MuteTime") + " -s" + " " + Main.plugin.getbanreason1Config().getString("Severity2MuteReason"));
-				p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.plugin.getConfig().getString("Prefix") + Main.plugin.getbanreason1Config().getString("Severity2MuteMessage").replace("%player%", bannedPlayer.getName())));
-				p.closeInventory();
+				}
+				if (e.getCurrentItem().equals(Items.Severity2Mute(p))) {
+					p.chat("/tempmute " + bannedPlayer.getName() + " " + Main.plugin.getbanreason1Config().getString("Severity2MuteTime") + " -s" + " " + Main.plugin.getbanreason1Config().getString("Severity2MuteReason"));
+					p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.plugin.getConfig().getString("Prefix") + Main.plugin.getbanreason1Config().getString("Severity2MuteMessage").replace("%player%", bannedPlayer.getName())));
+					p.closeInventory();
 
-			}
-			if (e.getCurrentItem().equals(Items.Severity3Mute(p))) {
-				p.chat("/tempmute " + bannedPlayer.getName() + " " + Main.plugin.getbanreason1Config().getString("Severity3MuteTime") + " -s" + " " + Main.plugin.getbanreason1Config().getString("Severity3MuteReason"));
-				p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.plugin.getConfig().getString("Prefix") + Main.plugin.getbanreason1Config().getString("Severity3MuteMessage").replace("%player%", bannedPlayer.getName())));
-				p.closeInventory();
+				}
+				if (e.getCurrentItem().equals(Items.Severity3Mute(p))) {
+					p.chat("/tempmute " + bannedPlayer.getName() + " " + Main.plugin.getbanreason1Config().getString("Severity3MuteTime") + " -s" + " " + Main.plugin.getbanreason1Config().getString("Severity3MuteReason"));
+					p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.plugin.getConfig().getString("Prefix") + Main.plugin.getbanreason1Config().getString("Severity3MuteMessage").replace("%player%", bannedPlayer.getName())));
+					p.closeInventory();
 
-			}
-			if (e.getCurrentItem().equals(Items.Severity2ClientBan(p))) {
-				p.chat("/tempban " + bannedPlayer.getName() + " " + Main.plugin.getbanreason1Config().getString("Severity2ClientBanTime") + " -s" + " " + Main.plugin.getbanreason1Config().getString("Severity2ClientBanReason"));
-				p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.plugin.getConfig().getString("Prefix") + Main.plugin.getbanreason1Config().getString("Severity2ClientBanMessage").replace("%player%", bannedPlayer.getName())));
-				p.closeInventory();
+				}
+				if (e.getCurrentItem().equals(Items.Severity2ClientBan(p))) {
+					p.chat("/tempban " + bannedPlayer.getName() + " " + Main.plugin.getbanreason1Config().getString("Severity2ClientBanTime") + " -s" + " " + Main.plugin.getbanreason1Config().getString("Severity2ClientBanReason"));
+					p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.plugin.getConfig().getString("Prefix") + Main.plugin.getbanreason1Config().getString("Severity2ClientBanMessage").replace("%player%", bannedPlayer.getName())));
+					p.closeInventory();
 
-			}
-			if (e.getCurrentItem().equals(Items.Severity3ClientBan(p))) {
-				p.chat("/tempban " + bannedPlayer.getName() + " " + Main.plugin.getbanreason1Config().getString("Severity3ClientBanTime") + " -s" + " " + Main.plugin.getbanreason1Config().getString("Severity3ClientBanReason"));
-				p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.plugin.getConfig().getString("Prefix") + Main.plugin.getbanreason1Config().getString("Severity3ClientBanMessage").replace("%player%", bannedPlayer.getName())));
-				p.closeInventory();
+				}
+				if (e.getCurrentItem().equals(Items.Severity3ClientBan(p))) {
+					p.chat("/tempban " + bannedPlayer.getName() + " " + Main.plugin.getbanreason1Config().getString("Severity3ClientBanTime") + " -s" + " " + Main.plugin.getbanreason1Config().getString("Severity3ClientBanReason"));
+					p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.plugin.getConfig().getString("Prefix") + Main.plugin.getbanreason1Config().getString("Severity3ClientBanMessage").replace("%player%", bannedPlayer.getName())));
+					p.closeInventory();
 
-			}
-			if (e.getCurrentItem().equals(Items.PermBan(p))) {
-				p.chat("/ban " + bannedPlayer.getName() + " -s" + " " + Main.plugin.getbanreason1Config().getString("PermBanReason"));
-				p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.plugin.getConfig().getString("Prefix") + Main.plugin.getbanreason1Config().getString("PermBanMessage").replace("%player%", bannedPlayer.getName())));
-				p.closeInventory();
-			}
-			if (e.getCurrentItem().equals(Items.Warning(p))) {
-				p.chat("/warn " + bannedPlayer.getName() + " -s" + " " + Main.plugin.getbanreason1Config().getString("WarnReason"));
-				p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.plugin.getConfig().getString("Prefix") + Main.plugin.getbanreason1Config().getString("WarnMessage").replace("%player%", bannedPlayer.getName())));
-				p.closeInventory();
+				}
+				if (e.getCurrentItem().equals(Items.PermBan(p))) {
+					p.chat("/ban " + bannedPlayer.getName() + " -s" + " " + Main.plugin.getbanreason1Config().getString("PermBanReason"));
+					p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.plugin.getConfig().getString("Prefix") + Main.plugin.getbanreason1Config().getString("PermBanMessage").replace("%player%", bannedPlayer.getName())));
+					p.closeInventory();
+				}
+				if (e.getCurrentItem().equals(Items.Warning(p))) {
+					p.chat("/warn " + bannedPlayer.getName() + " -s" + " " + Main.plugin.getbanreason1Config().getString("WarnReason"));
+					p.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.plugin.getConfig().getString("Prefix") + Main.plugin.getbanreason1Config().getString("WarnMessage").replace("%player%", bannedPlayer.getName())));
+					p.closeInventory();
+				}
 			}
 		}
-	}
 }
 
 
