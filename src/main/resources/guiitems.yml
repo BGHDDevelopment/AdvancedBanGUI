@@ -43,6 +43,16 @@ WarningLore:
   - '&fTrolling - was trying to make bob angry in chat '
   - ' '
 
+#Kick:
+KickItem: "ANVIL"
+KickLocation: 52
+KickName: "&a&lKick"
+KickLore:
+  - '&fKick Duration: &eOnce'
+  - ' '
+  - '&7Spam'
+  - ' '
+
 #ChatPunishments:
 
 #PermMute:
@@ -187,6 +197,3 @@ Severity3ClientBanLore:
   - '&fOther Hack'
   - '&cAlso for second offenders!'
   - ' '
-
-  
-  

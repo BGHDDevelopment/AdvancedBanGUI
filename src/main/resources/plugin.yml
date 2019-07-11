@@ -1,0 +1,13 @@
+name: AdvancedBanGUI
+version: ${project.version}
+main: me.noodles.gui.main.Main
+authors: [BGHDDevelopment]
+description: A GUI plugin that connects to LiteBans.
+website: https://bghddevelopment.com
+commands:
+   punish:
+      description: /punish (player).
+   advancedbangui:
+      description: Information about LiteBansGUI.
+   advancedbanguireload:
+      description: Reloads config file.
