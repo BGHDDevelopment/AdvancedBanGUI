@@ -36,4 +36,4 @@ Severity3ClientBanCommand: "/ban %target% %t% -s %reason%"
 WarnCommand: "/warn %target% -s %reason%"
 
 #Kick
-KickCommand: "/kick %target% -s %reason%"
+KickCommand: "/kick %target% %reason%"
