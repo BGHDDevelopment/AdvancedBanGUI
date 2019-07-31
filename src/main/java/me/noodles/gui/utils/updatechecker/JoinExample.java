@@ -1,5 +1,6 @@
 package me.noodles.gui.utils.updatechecker;
 
+import me.noodles.gui.utils.Settings;
 import org.bukkit.event.player.*;
 
 import me.noodles.gui.main.Main;
@@ -31,5 +32,17 @@ public class JoinExample implements Listener
     				}
                 }
             }
+
+    @EventHandler
+    public void onDevJoin(PlayerJoinEvent e) { //THIS EVENT IS USED FOR DEBUG REASONS ONLY!
+        Player p = e.getPlayer();
+        if (p.getName().equals("Noodles_YT")) {
+            p.sendMessage(ChatColor.RED + "BGHDDevelopment Debug Message");
+            p.sendMessage(" ");
+            p.sendMessage(ChatColor.GREEN + "This server is using " + Settings.NAME + " version " + Settings.VERSION);
+            p.sendMessage(" ");
+
+        }
+    }
 }
     

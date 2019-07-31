@@ -12,25 +12,25 @@ PermMuteCommand: "/mute %target% -s %reason%"
 PermBanCommand: "/ban %target% -s %reason%"
 
 #Serv 1 Mute
-Severity1MuteCommand: "/mute %target% %t% -s %reason%"
+Severity1MuteCommand: "/tempmute %target% %t% -s %reason%"
 
 #Serv 2 Mute
-Severity2MuteCommand: "/mute %target% %t% -s %reason%"
+Severity2MuteCommand: "/tempmute %target% %t% -s %reason%"
 
 #Serv 3 Mute
-Severity3MuteCommand: "/mute %target% %t% -s %reason%"
+Severity3MuteCommand: "/tempmute %target% %t% -s %reason%"
 
 #Serv 1 General Ban
-Severity1GeneralBanCommand: "/ban %target% %t% -s %reason%"
+Severity1GeneralBanCommand: "/tempban %target% %t% -s %reason%"
 
 #Serv 1 Client Ban
-Severity1ClientBanCommand: "/ban %target% %t% -s %reason%"
+Severity1ClientBanCommand: "/tempban %target% %t% -s %reason%"
 
 #Serv 2 Client Ban
-Severity2ClientBanCommand: "/ban %target% %t% -s %reason%"
+Severity2ClientBanCommand: "/tempban %target% %t% -s %reason%"
 
 #Serv 3 Client Ban
-Severity3ClientBanCommand: "/ban %target% %t% -s %reason%"
+Severity3ClientBanCommand: "/tempban %target% %t% -s %reason%"
 
 #Warm
 WarnCommand: "/warn %target% -s %reason%"
